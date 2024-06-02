@@ -1,0 +1,240 @@
+:root {
+    --color-light: #ffffff;
+    --color-darkBlue: #031c36;
+    --color-blue: #3357e7d6;
+    --color-black: #191919;
+    --transition: .3s;
+    --font-body: "Inter", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--color-darkBlue) 20%, var(--color-black));
+}
+
+/* hotbar */
+.container{
+    position: sticky;
+    top:0;
+}
+
+.hotBarInfos {
+    width: 100%;
+    background-color: var(--color-black);
+    box-shadow: 0px 10px 15px var(--color-black);
+    height: 10vh;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.hotBarInfos a {
+    font-size: 1vmax;
+    font-size: 2vmin;
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.hotBarInfosA a:hover {
+    color: var(--color-blue);
+}
+
+.hotBarInfos ul {
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 0;
+}
+
+.tech{
+    background-color: var(--color-black);
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotBarLogo a{
+    font-weight: bold;
+    font-size: 4vmin;
+    text-decoration: none;
+}
+
+
+.ocean{
+    color: var(--color-blue);
+}
+
+/* hotbar finalizado */
+
+
+/* abertura do site  */
+.principal {
+    background-image: linear-gradient(to bottom, var(--color-black) ,#191919b9 , #031c3614, #031c36 95%),url(../images/pexels-berend-1452701\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.principal h2{
+    color: var(--color-blue);
+    font-size: clamp(40px, 4vw, 50px);
+    font-weight: 800;
+}
+
+.principal p{
+    width: 60%;
+    text-wrap: balance;
+    line-height: 1.6;
+}
+
+.button {
+    width: 8vh;
+    border: 3px solid var(--color-blue);
+    padding: 15px 20px;
+    background-color: var(--color-blue);
+    border-radius: 100px;
+    transition: var(--transition);
+}
+
+.button:hover{
+    background-color: transparent;   
+}
+/* abertura do site finalizada */
+
+
+.secoes a, .principal a {
+    color: var(--color-light);
+    transition: var(--transition);
+    
+}
+
+
+
+/* inicio das seções */
+.invertido{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.normal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--color-light);
+    text-align: center;
+}
+
+
+.image{
+    width: 40vw;
+}
+
+.image img{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+}
+
+.text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 40vh;
+    line-height: 1.5;
+
+    
+}
+
+.text h2{
+    color: var(--color-blue);
+    font-size: clamp(25px, 4vw, 35px);
+}
+
+.text p{
+    font-size: clamp(15px, 2vw, 20px);
+    margin: 20px 0;
+}
+
+/* finalização das seções */
+
+/* inicio rodapé */
+
+.footer {
+	background-color: var(--color-black);
+	color: var(--color-light);
+	padding: 20px;
+	text-align: center;
+}
+
+.footer a, .footer p{
+    font-size: clamp(8px, 2vw, 20px);    
+}
+
+
+.footer a:hover{
+    color: var(--color-blue);
+}
+
+/* finalização rodapé */
+
+@media (max-width: 480px) {
+    .normal, .invertido normal{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text{
+        width: 60vw;
+        gap: 30px;
+    }
+    .image{
+        width: 100vw;
+    }
+
+    .image img{
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 945px) {
+    .normal, .invertido normal{
+        flex-direction: column;
+    }
+}
