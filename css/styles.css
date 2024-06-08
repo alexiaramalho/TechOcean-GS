@@ -19,7 +19,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 ul{
     list-style: none;
 }
@@ -39,7 +38,7 @@ body{
     background-color: var(--color-black);
     box-shadow: 0px 10px 15px var(--color-black);
     height: 10vh;
-    padding: 0 30px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +46,7 @@ body{
 }
 
 .hotBarInfos a {
-    font-size: 1vmax;
+    padding: 0;
     font-size: 2vmin;
     text-decoration: none;
     color: var(--color-light);
@@ -60,8 +59,9 @@ body{
 }
 
 .hotBarInfos ul {
+    list-style: none;
     display: flex;
-    gap:40px;
+    gap:10px;
     flex-wrap: wrap;
     justify-content: center;
     line-height: 0;
@@ -119,8 +119,16 @@ body{
     text-wrap: balance;
     line-height: 1.6;
 }
+.principal h3{
+    font-size: clamp(15px, 4vw, 40px);
 
+}
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 8vh;
     width: 8vh;
     border: 3px solid var(--color-blue);
     padding: 15px 20px;
@@ -134,6 +142,15 @@ body{
 }
 /* abertura do site finalizada */
 
+.secoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.secoes section{
+    margin: 10vh 0;
+}
 
 .secoes a, .principal a {
     color: var(--color-light);
@@ -200,6 +217,10 @@ body{
 	color: var(--color-light);
 	padding: 20px;
 	text-align: center;
+}
+
+.footer ul{
+    list-style: none;
 }
 
 .footer a, .footer p{
