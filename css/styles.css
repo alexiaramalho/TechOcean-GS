@@ -217,6 +217,7 @@ body{
 	color: var(--color-light);
 	padding: 20px;
 	text-align: center;
+    margin-top: 20vh;
 }
 
 .footer ul{
@@ -234,6 +235,7 @@ body{
 
 /* finalização rodapé */
 
+/* breakpoint celular */
 @media (max-width: 480px) {
     .normal, .invertido normal{
         justify-content: center;
